@@ -1,0 +1,5 @@
+ch = str(input('rentrez votre phrase : '))
+if 'e' in ch:
+    print('La chaîne de car caractère contient au moins un "e"')
+else:
+    print('La chaîne de car caractère ne contient pas de "e"')
