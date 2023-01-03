@@ -1,0 +1,34 @@
+def triangle(a:int, b:int, c:int):
+    if a>=b and a>=c:
+        hypotenuse=a
+        cote1=b
+        cote2=c
+    if b>=a and b>=c:
+        hypotenuse=b
+        cote1=a
+        cote2=c
+    if c>=a and c>=b:
+        hypotenuse=c
+        cote1=a
+        cote2=b
+    if hypotenuse < cote1 + cote2:
+        print("Le triangle est faisable.")
+    else:
+        print("Le triangle n'est pas faisable.")
+        return
+
+    quelconque=1
+    if cote1 == cote2 == hypotenuse:
+        print("le triangle est equilateral.")
+        quelconque=0
+    if hypotenuse**2 == (cote1**2) + (cote2**2):
+        print("le triangle est rectangle.")
+        quelconque=0
+    if hypotenuse==cote1 or hypotenuse==cote2 or cote1==cote2:
+        print("le triangle est isocele.")
+        quelconque=0
+    if quelconque==1:
+        print("MdR lE TriAnGlE iL eSt pAs OriGinAl")
+
+
+triangle(6, 6, 6)

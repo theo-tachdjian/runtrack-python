@@ -1,0 +1,7 @@
+def Add(x, y):
+    if x!=int(x) or y!=int(y):
+        print("Veuillez répéter l'oppération avec des nombres entier")
+    else:
+        print("le résultat de votre calcule est : ", x + y)
+
+Add(3, 4)

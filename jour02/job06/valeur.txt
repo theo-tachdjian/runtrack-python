@@ -1,0 +1,10 @@
+def valeur(nombre:int):
+    if nombre>0:
+        print("positif")
+    else:
+        if nombre<0:
+            print("négatif")
+        else:
+            print("Votre valeur est 0.")
+
+valeur(0)

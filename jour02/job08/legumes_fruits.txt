@@ -1,0 +1,11 @@
+def legumes_fruits(type:str, saison:str):
+    if type=="fruits" and saison=="hiver":
+        print("orange, mandarine et kiwi.")
+    if type=="fruits" and saison=="ete":
+        print("poire, fraise et cassis.")
+    if type=="legume" and saison=="hiver":
+        print("carotte, topinambour et endive.")
+    if type=="legume" and saison=="ete":
+        print("artichaut, aubergine et navet.")
+
+legumes_fruits("legume", "hiver")
