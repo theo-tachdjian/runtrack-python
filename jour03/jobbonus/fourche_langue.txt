@@ -1,0 +1,11 @@
+def fourche_langue():
+    print("veuillez écrir votre mot : ")
+    a=input()
+    b=""
+    i=len(a)
+    while i>0:
+        b=b+a[i-1]
+        i-=1
+    print(b)
+
+fourche_langue()

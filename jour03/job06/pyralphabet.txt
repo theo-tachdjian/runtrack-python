@@ -1,0 +1,18 @@
+def pyralphabet():
+    alphabet="abcdefghijklmnopqrstuvwxyz"*5
+    i=0
+    x=0
+    y=0
+    z=""
+    while x<=(len(alphabet)-y):
+        x=0
+        for j in range(y, y + i +1):
+            z=z+alphabet[j]
+            x+=1
+        print(z)
+        i+=1
+        y=y+i
+        z=""
+
+
+pyralphabet()

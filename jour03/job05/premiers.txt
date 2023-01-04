@@ -1,0 +1,16 @@
+def premiers(terme):
+    n = [True] * (terme + 1)
+    n[1] = False
+    x = 2
+    while x <= terme:
+        for i in range(x + 1, terme + 1):
+            if i % x == 0:
+                n[i] = False
+        x += 1
+        while x < terme and n[x] != True:
+            x += 1
+    for i in range(2, terme +1):
+        if n[i] == True:
+            print(i)
+
+premiers(1000)
