@@ -1,0 +1,26 @@
+def max_min():
+    L = [8, 24, 27, 48, 2, 16, 9, 102, 7, 84, 91]
+    minimum = None
+    maximum = None
+    for i in L:
+        if minimum == None:
+            minimum = i
+        elif i < minimum:
+            minimum = i
+    for i in L:
+        if maximum == None:
+            maximum = i
+        elif i > maximum:
+            maximum = i
+    print(minimum)
+    print(maximum)
+
+def max_min_court():
+    L = [8, 24, 27, 48, 2, 16, 9, 102, 7, 84, 91]
+    print(min(L))
+    print(max(L))
+
+
+
+max_min()
+max_min_court()

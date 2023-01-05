@@ -1,0 +1,12 @@
+def nombres():
+    L = [5, 8, 95, 69, 41]
+    print(L[1])
+    L = somme_3(L)
+    print(len(L))
+
+def somme_3(liste):
+    liste[3] = liste[2] + liste[4]
+    print("Somme de L[2] et L[4] dans L[3]:", liste[3])
+    return liste
+
+nombres()

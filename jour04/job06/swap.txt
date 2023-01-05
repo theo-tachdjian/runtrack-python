@@ -1,0 +1,13 @@
+def swap(list):
+    if liste == None or liste == 0:
+        return None
+    if len(liste) == 1:
+        return liste
+
+    premier = liste[0]
+    dernier = liste[len(liste)-1]
+    liste[0] = dernier
+    liste[len(liste)-1] = premier
+    return liste
+
+print(swap([252, 498, 666, 95123]))
