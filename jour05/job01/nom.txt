@@ -1,0 +1,6 @@
+def nom():
+    print("Entrez votre nom: ", end=" ")
+    nom = input()
+    print("Hello", nom, "!")
+
+nom()

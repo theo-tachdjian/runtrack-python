@@ -1,0 +1,22 @@
+def notes(liste):
+    arrondi = []
+    i = 0
+    while i < len(liste):
+        if liste[i] > 40:
+            if liste[i] % 10 > 5:
+                if liste[i] % 10 > 7:
+                    arrondi += [liste[i] - liste[i] % 10 + 10]
+                else:
+                    arrondi += [liste[i]]
+            else:
+                if liste[i] % 10 > 2:
+                    arrondi += [liste[i] - liste[i] % 10 + 5]
+                else:
+                    arrondi += [liste[i]]
+        else:
+            arrondi += [liste[i]]
+        i += 1
+
+    print(arrondi)
+
+notes([33, 52, 58, 62, 82, 95])
